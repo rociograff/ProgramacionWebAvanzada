@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <title>Ejercicio 4: Diseño automático de columnas</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <div class="container">
+        <div class="card">
+            <div class="card-body p-4">
+                <figure class="mb-0">
+                    <ul class="list-unstyled">
+                        <li><strong>Ejercicio 4: Diseño automático de columnas</strong>
+                            <ul>
+                                <li>Implemente un contenedor que tenga 3 columnas con la misma cantidad de filas para
+                                    cualquier tipo de dispositivo usando 2 alternativas sin colapsar. (Ayuda: no usar *)
+                                </li>
+                                <li>Implemente un contenedor que tenga todas las columnas con la misma cantidad de filas
+                                    para cualquier tipo de dispositivo, con una fila sin colapsar y otra que colapse
+                                    para un tamaño fijo, por ejemplo para “lg”.</li>
+                                <li>Implemente un contenedor que tenga una columna con un ancho en unidades fijo y la
+                                    columna de la izquierda o derecha o ambas sin valor.</li>
+                                <li>¿Y si necesitamos que se repartan los espacios teniendo en cuenta la cantidad de
+                                    contenido de una columna? ¿Cómo lo haríamos?</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <p>Implemente un contenedor que tenga 3 columnas con la misma cantidad de filas para cualquier tipo de
+            dispositivo usando 2 alternativas sin colapsar. (Ayuda: no usar *)</p>
+        <h1 class="text-center display-6">Primer alternativa</h1>
+        <div class="row row-cols-3">
+            <div class="col" style="background-color:#aaa">
+                <h1>Columna 1</h1>
+                <p>Esto es una prueba de bootstrap.</p>
+            </div>
+            <div class="col" style="background-color:#bbb">
+                <h1>Columna 2</h1>
+                <p>Esto es una prueba de bootstrap.</p>
+            </div>
+            <div class="col" style="background-color:#ccc">
+                <h1>Columna 3</h1>
+                <p>Esto es una prueba de bootstrap.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <h1 class="text-center display-6">Segunda alternativa</h1>
+        <div class="row">
+            <div class="col-4" style="background-color:#aaa">
+                <h1>Columna 1</h1>
+                <p>Esto es una prueba de bootstrap.</p>
+            </div>
+            <div class="col-4" style="background-color:#bbb">
+                <h1>Columna 2</h1>
+                <p>Esto es una prueba de bootstrap.</p>
+            </div>
+            <div class="col-4" style="background-color:#ccc">
+                <h1>Columna 3</h1>
+                <p>Esto es una prueba de bootstrap.</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <p>Implemente un contenedor que tenga todas las columnas con la misma cantidad de filas para cualquier tipo de
+            dispositivo, con una fila sin colapsar y otra que colapse para un tamaño fijo, por ejemplo para “lg”.</p>
+        <div class="row">
+            <div class="col" style="background-color:#aaa">
+                <h1>Columna 1</h1>
+                <p>Esto es una prueba de bootstrap 5.</p>
+            </div>
+            <div class="col" style="background-color:#bbb">
+                <h1>Columna 2</h1>
+                <p>Esto es una prueba de bootstrap 5.</p>
+            </div>
+            <div class="col" style="background-color:#ccc">
+                <h1>Columna 3</h1>
+                <p>Esto es una prueba de bootstrap 5.</p>
+            </div>
+            <div class="col" style="background-color:#ddd">
+                <h1>Columna 4</h1>
+                <p>Esto es una prueba de bootstrap 5.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3" style="background-color:#aaa">
+                <h1>Columna 1</h1>
+                <p>Esto es una prueba de bootstrap 5.</p>
+            </div>
+            <div class="col-3" style="background-color:#bbb">
+                <h1>Columna 2</h1>
+                <p>Esto es una prueba de bootstrap 5.</p>
+            </div>
+            <div class="col-3" style="background-color:#ccc">
+                <h1>Columna 3</h1>
+                <p>Esto es una prueba de bootstrap 5.</p>
+            </div>
+            <div class="col-3" style="background-color:#ddd">
+                <h1>Columna 4</h1>
+                <p>Esto es una prueba de bootstrap 5.</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <p>Implemente un contenedor que tenga una columna con un ancho en unidades fijo y la columna de la izquierda o
+            derecha o ambas sin valor.</p>
+        <div class="row">
+            <div class="col" style="background-color:#aaa">
+                <h1>Columna 1</h1>
+                <p>Esto es una prueba de bootstrap 5.</p>
+            </div>
+            <div class="col-5" style="background-color:#bbb">
+                <h1>Columna 2</h1>
+                <p>Esto es una prueba de bootstrap 5.</p>
+            </div>
+            <div class="col" style="background-color:#ccc">
+                <h1>Columna 3</h1>
+                <p>Esto es una prueba de bootstrap 5.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <hr>
+
+    <div class="container">
+        <p>¿Y si necesitamos que se repartan los espacios teniendo en cuenta la cantidad de contenido de una columna?
+            ¿Cómo lo haríamos?</p>
+        <p> Si necesitamos que se repartan los espacios teniendo en cuenta la cantidad de
+            contenido de una columna podemos utilizar las clases col-auto, col-sm-auto,
+            col-md-auto, col-lg-auto, col-xl-auto y col-xxl-auto.</p>
+        <div class="row">
+            <div class="col-auto" style="background-color:#aaa">
+                <h1>Columna 1</h1>
+                <p>Esto es una prueba de bootstrap 5.</p>
+            </div>
+            <div class="col-auto" style="background-color:#bbb">
+                <h1>Columna 2</h1>
+                <p>Esto es una prueba de bootstrap 5.</p>
+            </div>
+            <div class="col-auto" style="background-color:#ccc">
+                <h1>Columna 3</h1>
+                <p>Esto es una prueba de bootstrap 5.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
