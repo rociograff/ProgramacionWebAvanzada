@@ -1,0 +1,32 @@
+*{
+    font-size: 20px;
+}
+.fil2,.fil3,.car{
+    text-align: center;
+    height: 150px;
+}
+.fil2{
+    background-color: #87aade;
+}
+.fil3{
+    background-color: #cccccc;
+}
+.col-md-3{
+    border:solid 1px black;
+}
+.disp{
+    border:solid 1px black;
+    background-color: #00ffff;
+    height: 50px;
+    text-align: center;
+}
+.tit{
+    border:solid 1px black;
+    background-color: #00ff00;
+    height: 35px;
+    text-align: center;
+}
+.car{
+    border:solid 1px black;
+    background-color: #ff9955;
+}
