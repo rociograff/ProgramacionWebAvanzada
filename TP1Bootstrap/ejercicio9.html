@@ -8,8 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../styles/ejercicio9.css">
 
-    <title>Ejercicio 7</title>
+    <title>Ejercicio 9</title>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -30,7 +31,7 @@
                                 <a class="dropdown-item" href="ejercicio1.html">Ejercicio 1</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="ejercicio2.html">Ejercicio 2</a>
+                                <a class="dropdown-item" href="ejercicio2.html">Ejercicio 2/a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="ejercicio3.html">Ejercicio 3</a>
@@ -45,13 +46,13 @@
                                 <a class="dropdown-item" href="ejercicio6.html">Ejercicio 6</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">Ejercicio 7</a>
+                                <a class="dropdown-item" href="ejercicio7.html">Ejercicio 7</a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="ejercicio8.html">Ejercicio 8</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="ejercicio9.html">Ejercicio 9</a>
+                                <a class="dropdown-item" href="#">Ejercicio 9</a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="ejercicio10.html">Ejercicio 10</a>
@@ -72,48 +73,64 @@
         </div>
     </nav>
 
-    <div class="container-fluid">
-        <ul class="nav nav-tabs nav-pills id=" myTab role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Inicio</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="menu1-tab" data-bs-toggle="tab" data-bs-target="#menu1" type="button" role="tab" aria-controls="menu1" aria-selected="false">Grupo 1</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="menu2-tab" data-bs-toggle="tab" data-bs-target="#menu2" type="button" role="tab" aria-controls="menu2" aria-selected="false">Grupo 2</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="menu3-tab" data-bs-toggle="tab" data-bs-target="#menu3" type="button" role="tab" aria-controls="menu3" aria-selected="false">Grupo 3</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="menu4-tab" data-bs-toggle="tab" data-bs-target="#menu4" type="button" role="tab" aria-controls="menu4" aria-selected="false">Grupo 4</button>
-            </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
-                <div class="container">
-                    1qaz
+    <div class="container">
+        <div class="card bg-dark text-white rounded-4 mt-3 mb-3">
+            <div class="card-body p-4">
+                <figure class="mb-0">
+                    <ul class="list-unstyled">
+                        <li><strong>Ejercicio 9:</strong>
+                            <ul>
+                                <li>Cree una nueva página, agregando un link a ella en la página del ejercicio 1, y defina la siguiente estructura:</li>
+                                <ol>
+                                    <li>Una fila en la parte superior con una única columna con fondo verde que ocupará todo el ancho, en dicha columna aparecerá el texto "Header" alineado a la izquierda y en grande.</li>
+                                    <li> Una segunda fila con tres columnas en color rojo con el mismo ancho y con los números 1, 2 y 3 (respectivamente) centrados y en letras grandes.</li>
+                                    <li>La tercera y última fila contendrá dos columnas de igual ancho y en color amarillo, la primera columna tendrá el texto "footer 1" alineado a la derecha y la segunda el texto "footer 2" alineado a la izquierda (ambos usando un tamaño de fuente grande).</li>
+                                </ol>
+                                <li>Ayuda: lo que no pueda hacerse con clases de Bootstrap deberá definirse en un archivos de estilos personalizados, por ejemplo utilizando media query.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-2">
+        <div class="col-12 border border-dark border-3" id="header">
+            <p>
+                <span id="header-text">Header</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-2">
+        <div class="container-fluid">
+            <div class="row text-black">
+                <div class="col-4 border border-dark border-3" id="col1">
+                    <span>1</span>
+                </div>
+                <div class="col-4 border border-dark border-3" id="col2">
+                    <span>2</span>
+                </div>
+                <div class="col-4 border border-dark border-3" id="col3">
+                    <span>3</span>
                 </div>
             </div>
-            <div class="tab-pane fade" id="menu1" role="tabpanel" aria-labelledby="menu1-tab">
-                <div class="container">
-                    2wsx
+        </div>
+    </div>
+
+    <div class="container-fluid mt-2 mb-4">
+        <div class="container-fluid">
+            <div class="row text-black">
+                <div class="col-6 border border-dark border-3" id="footer1">
+                    <p>
+                        <span>Footer 1</span>
+                    </p>
                 </div>
-            </div>
-            <div class="tab-pane fade" id="menu2" role="tabpanel" aria-labelledby="menu2-tab">
-                <div class="container">
-                    3edc
-                </div>
-            </div>
-            <div class="tab-pane fade" id="menu3" role="tabpanel" aria-labelledby="menu3-tab">
-                <div class="container">
-                    4rfv
-                </div>
-            </div>
-            <div class="tab-pane fade" id="menu4" role="tabpanel" aria-labelledby="menu4-tab">
-                <div class="container">
-                    5tgb
+                <div class="col-6 border border-dark border-3" id="footer2">
+                    <p>
+                        <span>Footer 2</span>
+                    </p>
                 </div>
             </div>
         </div>
